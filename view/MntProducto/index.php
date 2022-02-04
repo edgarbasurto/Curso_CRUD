@@ -11,14 +11,19 @@
 
     <title>Manteminiento de Productos</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- Custom fonts for this template -->
     <link href="../../public/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- Custom styles for this template -->
     <link href="../../public/css/sb-admin-2.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="../../public/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    
 
 </head>
 
@@ -58,8 +63,8 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Taller</span>
                 </a>
@@ -85,8 +90,8 @@
 
            <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Inventario</span>
                 </a>
@@ -354,18 +359,17 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered table-hover" id="productos_data" width="100%" cellspacing="0">
+                                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>Nombre</th>
                                             <th></th>
                                             <th></th>
-                                            
                                         </tr>
                                     </thead>
                                     
                                     <tbody>
-                                        
+                                  
 
                                     </tbody>
                                 </table>
@@ -433,11 +437,11 @@
     <script src="../../public/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="../../public/vendor/chart.js/Chart.min.js"></script>
+    <script src="../../public/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../../public/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="../../public/js/demo/chart-area-demo.js"></script>
-    <script src="../../public/js/demo/chart-pie-demo.js"></script>\
+    <script src="../../public/js/demo/datatables-demo.js"></script>
 
     <script type="text/javascript"  src="mntproducto.js"></script>
 

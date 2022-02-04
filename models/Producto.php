@@ -3,11 +3,11 @@
         public function get_producto(){
             $conectar = parent::conexion();
             parent::set_names();
-            $sql="SELECT * FROM tm_producto WHERE est=1";
-            $sql=$conectar->prepare($sql);
+            $sql = "SELECT * FROM tm_producto WHERE estado = 1";
+            $sql = $conectar->prepare($sql);
             $sql->execute();
-            return $resultado=$sql->fetchAll();
-        }
+            return $resultado = $sql->fetchAll(); /* Guardamos toda la información */
+      }
 
         public function get_producto_x_id($prod_id){
             $conectar = parent::conexion();
