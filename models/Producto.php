@@ -6,6 +6,7 @@
             $sql="SELECT * FROM tm_producto WHERE est = 1";
             $sql=$conectar->prepare($sql);
             $sql->execute();
+            $conectar = null;
             return $resultado=$sql->fetchAll(); /* Guardamos toda la información */
       }
 
@@ -13,9 +14,11 @@
             $conectar = parent::conexion();
             parent::set_names();
             $sql="SELECT * FROM tm_producto WHERE prod_id = ?";
+            print_r($sql);
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$prod_id);
             $sql->execute();
+            $conectar = null;
             return $resultado=$sql->fetchAll();
         }
 
@@ -32,6 +35,7 @@
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$prod_id);
             $sql->execute();
+            $conectar = null;
             return $resultado=$sql->fetchAll();
         }
 
@@ -42,6 +46,7 @@
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1,$prod_nom);
             $sql->execute();
+            $conectar = null;
             return $resultado=$sql->fetchAll();
         }
 
@@ -58,6 +63,7 @@
             $sql->bindValue(1,$prod_nom);
             $sql->bindValue(2,$prod_id);
             $sql->execute();
+            $conectar = null;
             return $resultado=$sql->fetchAll();
         }
 

@@ -335,8 +335,10 @@
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
+                        <div class="card-header py-3 d-sm-flex align-items-center justify-content-between mb-4">
                             <h6 class="m-0 font-weight-bold text-primary">Registros</h6>
+                            <a id="btnnuevo" href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                            class="fas fa-plus-circle fa-sm text-white-50"></i> Nuevo Registro</a>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -407,6 +409,7 @@
         </div>
     </div>
 
+    <?php require_once("modalmantenimiento.php"); ?>
     <!-- Bootstrap core JavaScript-->
     <script src="../../public/vendor/jquery/jquery.min.js"></script>
     <script src="../../public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -428,6 +431,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.11.4/b-2.2.2/b-colvis-2.2.2/b-html5-2.2.2/b-print-2.2.2/datatables.min.js"></script>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script type="text/javascript" src="mntproducto.js"></script>
 
